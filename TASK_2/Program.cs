@@ -11,7 +11,13 @@ int c = int.Parse(Console.ReadLine());
 
 int max = a;
 
-if (a < b) max = b;
-if (b < c) max = c;
+if ((b > a) && (b > c))
+{
+    max = b;
+}
+if ((c > a) && (c > b))
+{
+    max = c;
+}
 
-System.Console.Writeline("Максимальное из этих чисел = "+max);
+Console.WriteLine("Максимальное из этих чисел = "+max);
